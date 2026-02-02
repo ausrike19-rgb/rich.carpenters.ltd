@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rich Carpenters Ltd | Carpentry & Renovation in Cambridgeshire UK</title>
+
+  <!-- SEO META -->
+  <meta name="description" content="Rich Carpenters Ltd – professional interior and exterior carpentry services in Cambridgeshire, UK. 1st & 2nd fix, cladding, doors, windows, flooring, renovations. Over 15 years experience." />
+  <meta name="keywords" content="carpenter Cambridgeshire, carpentry services UK, 1st fix carpentry, 2nd fix carpentry, cladding installation, doors windows flooring, renovation carpenters" />
+
+  <!-- STYLES -->
+  <style>
+    :root {
+      --green: #7f9f8a;
+      --brown: #a38b6d;
+      --yellow: #e4d2a1;
+      --dark: #111;
+      --bg: #f6f7f4;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--bg);
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=60') center/cover;
+      color: #fff;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { max-width: 800px; margin: auto; }
+
+    nav {
+      background: #fff;
+      padding: 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--dark);
+      margin: 0 16px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      border-left: 6px solid var(--yellow);
+      padding-left: 14px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card div { padding: 25px; }
+
+    .cta {
+      background: var(--yellow);
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta a {
+      background: var(--green);
+      color: #111;
+      padding: 16px 34px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      max-width: 600px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--green);
+      border: none;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--brown);
+      text-align: center;
+      padding: 25px;
+      color: #111;
+    }
+
+    /* Floating buttons */
+    .floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 99;
+    }
+
+    .floating a {
+      background: var(--green);
+      padding: 14px 18px;
+      border-radius: 50px;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Rich Carpenters Ltd</h1>
+  <p>
+    <strong>LT:</strong> Vidaus ir lauko dailidės darbai Cambridgeshire, JK • 15+ metų patirtis<br>
+    <strong>EN:</strong> Interior & exterior carpentry services in Cambridgeshire, UK • 15+ years experience
+  </p>
+</header>
+
+<div class="badge">Free Site Visit</div>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#areas">Areas</a>
+  <a href="#contact">Contact</a>
+  <span style="margin-left:20px;">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('lt')">LT</button>
+  </span>
+  <a href="tel:+447860351971" class="mobile-call">Call</a>
+</nav>
+
+<section id="about">
+  <h2>About Us / Apie mus</h2>
+  <p class="lang-en"><strong>Rich Carpenters Ltd</strong> is a family-run carpentry business based in Cambridgeshire, UK. For over 15 years we’ve built our reputation on trust, quality workmanship, and a friendly but professional approach. We treat every project as if it were our own home.</p>
+  <p class="lang-en">We believe the best results come from clear communication and fair pricing. That’s why we prefer to discuss costs on-site, once we fully understand the scope and finish of the work.</p>
+
+  <p class="lang-lt"><strong>Rich Carpenters Ltd</strong> – šeimos verslas Cambridgeshire regione (JK), turintis daugiau nei 15 metų patirtį. Dirbame atsakingai, draugiškai, bet profesionaliai, kiekvieną projektą vertindami taip, lyg tai būtų mūsų pačių namai.</p>
+  <p class="lang-lt">Manome, kad geriausi rezultatai pasiekiami aiškiai bendraujant, todėl kainas deriname atvykę į vietą ir pilnai įvertinę darbų apimtį bei sudėtingumą.</p>
+</section>
+
+<section id="services">
+  <h2>Paslaugos / Services</h2>
+  <div class="services">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Interior carpentry">
+      <div>
+        <h3>Interior Carpentry</h3>
+        <p>1st & 2nd fix, doors, windows, flooring</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Exterior cladding">
+      <div>
+        <h3>Exterior Works</h3>
+        <p>Cladding, exterior timber, repairs</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837" alt="Renovation">
+      <div>
+        <h3>Renovations</h3>
+        <p>Residential & commercial renovation projects</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Reviews / Atsiliepimai</h2>
+  <p class="lang-en">⭐⭐⭐⭐⭐ "Excellent workmanship, very reliable and friendly family business. Highly recommended." – Cambridge</p>
+  <p class="lang-en">⭐⭐⭐⭐⭐ "Rich Carpenters fitted our doors and flooring perfectly. On time and great communication." – Ely</p>
+
+  <p class="lang-lt">⭐⭐⭐⭐⭐ „Labai kokybiški darbai, patikimi ir malonūs meistrai.“ – Cambridge</p>
+  <p class="lang-lt">⭐⭐⭐⭐⭐ „Puiki komunikacija ir nepriekaištingas rezultatas.“ – Ely</p>
+
+  <p><a href="#" target="_blank">View more reviews on Google</a></p>
+</section>
+
+<section id="areas">
+  <h2>Areas We Cover / Aptarnaujamos vietovės</h2>
+  <p class="lang-en">Cambridge • Ely • Huntingdon • St Neots • Newmarket • Peterborough • Surrounding areas</p>
+  <p class="lang-lt">Cambridge • Ely • Huntingdon • St Neots • Newmarket • Peterborough ir aplinkinės vietovės</p>
+</section>
+
+<section class="cta">
+  <h2 class="lang-en">Free site visit & friendly advice</h2>
+  <h2 class="lang-lt">Nemokamas atvykimas ir draugiška konsultacija</h2>
+  <p class="lang-en">Prices are agreed after viewing the job on site</p>
+  <p class="lang-lt">Kainos derinamos vietoje, įvertinus darbų pobūdį</p>
+  <a href="#contact">Contact Us</a>
+</section>
+
+<section id="contact">
+  <h2>Contact Us / Kontaktai</h2>
+  <form action="https://formspree.io/f/xxxxxx" method="POST">
+    <input type="text" name="name" placeholder="Your Name / Jūsų vardas" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+    <textarea name="message" rows="5" placeholder="Tell us about your project / Aprašykite savo projektą"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Rich Carpenters Ltd • Cambridgeshire, UK</p>
+  <p>Google My Business: Carpentry & Renovation Specialists</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-en').forEach(e => e.style.display = (lang === 'en') ? 'block' : 'none');
+  document.querySelectorAll('.lang-lt').forEach(e => e.style.display = (lang === 'lt') ? 'block' : 'none');
+}
+setLang('en');
+</script>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+  <a href="https://wa.me/447860351971" target="_blank">WhatsApp</a>
+  <a href="tel:+447860351971">Call</a>
+</div>
+
+</body>
+</html>
+<form action="https://formspree.io/f/xxxxxx" method="POST">
+
